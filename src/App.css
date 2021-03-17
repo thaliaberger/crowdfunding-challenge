@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+body {
+  background: url(image-hero-desktop.jpg) no-repeat;
+  background-color: rgb(226, 226, 226);
+  background-size: contain;
+  font-size: 16px;
+  font-family: "Commissioner", sans-serif;
+  color: hsl(0, 0%, 48%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: black;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 130px;
+  font-size: 14px;
+}
+
+.navbar a {
+  margin-left: 20px;
+}
+
+main section:first-child {
+  margin-top: 190px;
+}
+
+section {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.01);
+  width: 45%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 40px 50px;
+}
+
+section h2 {
+  margin: 10px 0;
+}
+
+.logo-mastercraft {
+  position: absolute;
+  top: -30px;
+}
+
+.buttons {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.buttons p:first-child {
+  padding: 18px 25px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  background-color: hsl(176, 50%, 47%);
+}
+
+.buttons p:first-child:hover {
+  cursor: pointer;
+  background-color: hsl(176, 72%, 28%);
+}
+
+.buttons p + p {
+  cursor: pointer;
+
+  padding: 19px 25px 18.5px 70px;
+  border-radius: 30px;
+  font-weight: 500;
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(0, 0%, 48%);
+  position: relative;
+}
+
+.buttons p + p:hover img {
+  opacity: 0.7;
+}
+
+.buttons p + p img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* NUMBERS DIV */
+
+.numbers-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.numbers-section h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.numbers-div {
+  display: flex;
+  flex-direction: column;
+}
