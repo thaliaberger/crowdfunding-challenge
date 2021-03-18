@@ -43,7 +43,7 @@ section {
   background: #ffffff;
   border-radius: 5px;
   box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.01);
-  width: 45%;
+  width: 55%;
   margin: 20px auto 0 auto;
   display: flex;
   flex-direction: column;
@@ -184,9 +184,12 @@ button:hover {
 /* MODAL SECTION */
 
 .options-modal-section {
-  position: absolute;
-  left: 50%;
-  margin-left: -26.3%;
+  width: 55%;
+  top: -100px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
 }
 
 .overlay {
@@ -196,4 +199,34 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-option {
+  display: flex;
+  align-items: baseline;
+  border: 1px solid hsl(0, 0%, 82%);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.single-option input {
+  margin-right: 10px;
+}
+
+.options-modal-section > img {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.options-modal-section > p,
+h3 {
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
