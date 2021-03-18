@@ -26,12 +26,13 @@ body a {
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 15px 130px;
+  padding: 20px 130px;
   font-size: 14px;
 }
 
 .navbar a {
   margin-left: 20px;
+  margin-top: 15px;
 }
 
 main section:first-child {
@@ -62,29 +63,33 @@ section h2 {
 
 .buttons {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
 }
 
-.buttons p:first-child {
-  padding: 18px 25px;
+.buttons p:first-child,
+button {
+  padding: 15px 30px;
   border-radius: 30px;
+  border: none;
   color: white;
-  font-weight: 500;
   background-color: hsl(176, 50%, 47%);
 }
 
-.buttons p:first-child:hover {
+.buttons p:first-child:hover,
+button:hover {
   cursor: pointer;
   background-color: hsl(176, 72%, 28%);
 }
 
+.buttons p {
+  font-weight: 700;
+}
+
 .buttons p + p {
   cursor: pointer;
-
-  padding: 19px 25px 18.5px 70px;
+  padding: 15px 30px 15.5px 60px;
   border-radius: 30px;
-  font-weight: 500;
   background-color: hsl(0, 0%, 93%);
   color: hsl(0, 0%, 48%);
   position: relative;
@@ -98,22 +103,97 @@ section h2 {
   position: absolute;
   top: 0;
   left: 0;
+  height: 50px;
 }
 
 /* NUMBERS DIV */
 
-.numbers-section {
+.numbers-divs {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.numbers-section h4 {
+.numbers-divs h4 {
   font-size: 30px;
   margin: 0;
 }
 
 .numbers-div {
+  width: 30%;
   display: flex;
   flex-direction: column;
+}
+
+.progress-bar-container {
+  margin-top: 20px;
+  width: 100%;
+  background-color: hsl(0, 0%, 93%);
+  height: 10px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.01);
+}
+
+.progress-bar-content {
+  border-radius: 25px;
+  height: 10px;
+  background-color: hsl(176, 50%, 47%);
+}
+
+/* OPTIONS SECTIONS */
+
+.options-section > h3 {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.options-section > div {
+  border: 1px solid hsl(0, 0%, 82%);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.options-section div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.options-section > div:last-child {
+  opacity: 0.5;
+}
+
+.options-section button:disabled {
+  background-color: rgb(49, 49, 49);
+  cursor: inherit;
+}
+
+.options-section div div strong {
+  color: black;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.options-section div div h5 {
+  color: hsl(176, 50%, 47%);
+}
+
+/* MODAL SECTION */
+
+.options-modal-section {
+  position: absolute;
+  left: 50%;
+  margin-left: -26.3%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
